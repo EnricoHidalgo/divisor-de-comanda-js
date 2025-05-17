@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Gorjeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="conversor">
+            <label for="ttlAc">Qual foi o valor da conta?</label>
+            <input id="ttlAc" type="text" placeholder="Valor total da conta">
+
+            <label for="txs">Qual foi a taxa de serviço?</label>
+            <select id="txs">
+                <option value="0">Defina a taxa de serviço</option>
+                <option value="0.3">30%</option>
+                <option value="0.2">20%</option>
+                <option value="0.15">15%</option>
+                <option value="0.10">10%</option>
+                <option value="0.5">5%</option>
+            </select>
+            
+            <label for="nump">Número de pessoas que vão dividir a conta?</label>
+            <input id="nump" type="text" placeholder="Quantidade de pessoas">
+
+            <button type="button" id="calc">Calcular</button>
+
+            <section id="vlc">
+                R$<span id="vlp" class="vlp">0.00</span>
+                Cada
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
